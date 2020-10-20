@@ -1,0 +1,15 @@
+.back-document{
+	background-image: url('../img/back.jpg'); 
+	background-position: -31% -3%; 
+	background-repeat: no-repeat; 
+	background-size: 90% 100%;"
+}
+.small-text{
+	font-size: .9em;
+}
+.name{
+	font-size: 2em;	
+}
+.profession{
+	font-size: 1.5em;		
+}
