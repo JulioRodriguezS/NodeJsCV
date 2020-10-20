@@ -1,0 +1,28 @@
+{
+  "name": "cv-nodejs",
+  "version": "1.0.0",
+  "description": "a website for download my cv in pdf for taking it everywhere",
+  "main": "index.js",
+  "scripts": {
+    "start":"node index.js",
+    "dev":"nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JulioRodriguezS/NodeJsCV.git"
+  },
+  "author": "Julio Melquiades",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JulioRodriguezS/NodeJsCV/issues"
+  },
+  "homepage": "https://github.com/JulioRodriguezS/NodeJsCV#readme",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.0",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.10.9",
+    "nodemon": "^2.0.6"
+  }
+}
