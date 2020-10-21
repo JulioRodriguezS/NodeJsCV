@@ -1,0 +1,33 @@
+<div class="col-md-3">
+    <div class="text-center">
+        <img src="/public/img/68890464_460126921500413_2780631162370420158_n.jpg" alt="Perfil CV" width="100%"
+            class="rounded-circle m-2">
+    </div>
+    <!--About me-->
+    <div class="card-header mt-5">
+        <h6 class="m-0 font-weight-bold text-primary">Perfil</h6>
+    </div>
+    <div class="card-body text-justify small-text">
+        {{#if goals}}
+            {{#each goals}}
+            <p>{{description}}</p>
+            {{/each}}
+        {{/if}}
+    </div>
+    <div class="card-header">
+        <h6 class="m-0 font-weight-bold text-primary">Contacto</h6>
+    </div>
+    <div class="card-body  small-text">
+        <p id="conctact_to_me">
+            Teléfono: {{personalInformation.phone}} <br>
+            Correo electrónico: <br> {{personalInformation.email}}<br>
+            {{#if socialNerwoks}}
+                {{#each socialNerwoks}}
+                    {{networkName}}: <br>
+                    <strong><em><a target="_blank" href="{{networkLink}}">julio-melquiades-rodriguez-soberano-9097b6145</a></em></strong>
+                {{/each}}
+            {{/if}}
+            
+        </p>
+    </div>
+</div>

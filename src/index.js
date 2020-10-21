@@ -4,6 +4,11 @@ const path= require('path')
 const server = require('express')
 const app = server()
 
+//static files this is necesary to recognize in the host the public routes 
+//of css, img, js...
+app.use('/public', server.static(path.join(__dirname,'public')))
+
+//interpreter
 app.use(bodyParser.json())
 app.use(server.urlencoded({extended:false}))
 
@@ -17,9 +22,6 @@ app.engine('.hbs', exphbs({
     defaultLayout:'main'
 }))
 app.set('view engine', '.hbs')
-
-//static files
-app.use(server.static(path.join(__dirname,'public')))
 
 //routing
 app.use(require('./routes')(server))

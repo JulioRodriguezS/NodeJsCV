@@ -1,34 +1,12 @@
 <div class="container">
 		<div class="row">
-			<div class="col-sm-3">
-				<div class="text-center">
-					<img src="/public/img/68890464_460126921500413_2780631162370420158_n.jpg" alt="Perfil CV" width="200" height="200" class="rounded-circle m-2">
-				</div>
-				<!--About me-->
-				<div class="card-header mt-5">
-	                  <h6 class="m-0 font-weight-bold text-primary">Perfil</h6>
-				</div>
-				<div class="card-body text-justify small-text">
-					<p id="goals"></p>
-				</div>
-				<div class="card-header">
-	                  <h6 class="m-0 font-weight-bold text-primary">Contacto</h6>
-				</div>
-				<div class="card-body  small-text">
-					<p id="conctact_to_me">
-						Teléfono: 9984848661 <br>
-						Correo electrónico: <br> julio.rodriguez.soberano@outlook.com <br>
-						LinkedIn: <br>						
-						<strong><em><a target="_blank" href="https://www.linkedin.com/in/julio-melquiades-rodriguez-soberano-9097b6145/">julio-melquiades-rodriguez-soberano-9097b6145</a></em></strong>
-					</p>
-				</div>				
-			</div>
-
+			<!--Personal Information-->
+			{{>personalInformation}}
 			<!--Resume-->
-			<div class="col-sm-9">	
-				<div class="m-5">
-					<h1 class="m-5 name">Julio Melquiades Rodríguez Soberano</h1>							
-					<h2 class="profession">Programador web y analista de sistemas</h2>
+			<div class="col-md-9">	
+				<div class="m-md-4">
+					<h4 class="name">{{personalInformation.title}}</h4>							
+					<h5 class="profession">{{personalInformation.name}} {{personalInformation.lastName}}</h5>
 				</div>				
 				<hr>								
 				<div class="card-header">
@@ -250,7 +228,7 @@
 				</div>
 			</div>		
 			<!--PDF-->
-			<div class="col-sm-12 mb-5 text-center">
+			<div class="col-md-12 mb-5 text-center">
 				<button type="button" class="btn btn-primary" id="download_pdf"><span class="glyphicon glyphicon-cloud-download"></span>Descargar CV como PDF</button>
 			</div>
 
