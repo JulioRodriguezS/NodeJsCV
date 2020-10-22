@@ -8,6 +8,9 @@ const coursesSchema = new mongoose.Schema({
     courseInstitution:{
         type: String
     },
+    courseInsitutionURL:{
+        type: String
+    },
     courseTitle:{
         type: String        
     },
