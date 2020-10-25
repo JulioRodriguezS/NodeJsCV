@@ -1,7 +1,7 @@
-$("#downloadPDF").click(async function(e){
+$("#downloadPDF").click(function(e){
   e.preventDefault()
   const userId = $(this).data('id')
-  await $.post(`/downloadPDF/${userId}`)
+  $.get(`/downloadPDF/${userId}`)
   .done((data)=> {
     window.open(`/public/pdfs/${data}`,'_blank')
   })

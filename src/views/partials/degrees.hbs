@@ -1,11 +1,11 @@
 {{#if degrees}}
     {{#each degrees}}
-        <strong>{{institutionName}}</strong>
-        <blockquote>
-            <p>
-               {{carreerDescription}}
-            </p>
-            <footer class="text-italic">{{dateMonthYear initialDate}} - {{dateMonthYear finalDate}}</footer>
-        </blockquote>
+        <strong>{{institutionName}}</strong><br>
+        <p class="font-italic">
+            {{carreerDescription}}
+        </p>
+        <footer>
+            <p class="font-italic">{{dateMonthYear initialDate}} - {{dateMonthYear finalDate}}</p>
+        </footer>
     {{/each}}    
 {{/if}}

@@ -1,4 +1,3 @@
-{{!-- { userInfo, skills, workExperience, degrees, courses, goals, socialNetworks } --}}
 <div class="col-md-3">
     <div class="text-center">
         <img src="/public/img/68890464_460126921500413_2780631162370420158_n.jpg" alt="Perfil CV" width="100%"
@@ -6,26 +5,28 @@
     </div>
     <!--About me-->
     <div class="card-header mt-5">
-        <h6 class="m-0 font-weight-bold text-primary">Perfil</h6>
+        <h6 class="m-0 font-weight-bold text-primary">About Me...</h6>
     </div>
     <div class="card-body text-justify small-text">
         {{#if goals}}
         {{#each goals}}
-        <p>{{description}}</p>
+        <p class="font-italic">{{description}}</p>
         {{/each}}
         {{/if}}
     </div>
     <div class="card-header">
-        <h6 class="m-0 font-weight-bold text-primary">Contacto</h6>
+        <h6 class="m-0 font-weight-bold text-primary">Contact to me...</h6>
     </div>
     <div class="card-body  small-text">
         <p id="conctact_to_me">
-            Teléfono: {{userInfo.phone}} <br>
-            Correo electrónico: <br> {{userInfo.email}}<br>
+            <strong>Phone:</strong> <br>
+            <span class="font-italic">{{userInfo.phone}}</span><br>
+            <strong>E-mail:</strong> <br>
+            <span class="font-italic">{{userInfo.email}}</span><br>
             {{#if socialNetworks}}
             {{#each socialNetworks}}
-            {{networkName}}: <br>
-            <strong><em><a target="_blank"
+            <strong>{{networkName}}:</strong> <br>
+            <strong><em><a target="_blank" class="font-italic"
                         href="{{networkLink}}">julio-melquiades-rodriguez-soberano-9097b6145</a></em></strong>
             {{/each}}
             {{/if}}

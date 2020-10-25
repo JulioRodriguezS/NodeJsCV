@@ -23,7 +23,7 @@ module.exports = (app, server) => {
         res.render('index', { userInfo, skills, workExperience, degrees, courses, goals, socialNetworks })
     })
 
-    router.post('/downloadPDF/:userId', async (req,res,next)=>{
+    router.get('/downloadPDF/:userId', async (req,res,next)=>{
         let userId = req.params.userId
         userInfo = await gets('user', userId)
         const genPdf = new GenPDF()

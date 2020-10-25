@@ -97,7 +97,7 @@ module.exports = function (app, server) {
       }
     });
   });
-  router.post('/downloadPDF/:userId', function _callee2(req, res, next) {
+  router.get('/downloadPDF/:userId', function _callee2(req, res, next) {
     var userId, genPdf, resp;
     return regeneratorRuntime.async(function _callee2$(_context2) {
       while (1) {
