@@ -1,0 +1,8 @@
+{{#if courses}}
+    {{#each courses}}
+        <li class="list-group-item">
+            {{courseDescription}}
+            <strong><em><a target="_blank" href="{{courseInsitutionURL}}">{{courseInstitution}}</a></em></strong>
+        </li>
+    {{/each}}
+{{/if}}

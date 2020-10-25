@@ -13,12 +13,16 @@
     "url": "https://github.com/JulioRodriguezS/NodeJsCV/issues"
   },
   "dependencies": {
+    "axios": "^0.20.0",
     "bcryptjs": "^2.4.3",
     "body-parser": "^1.19.0",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "express-handlebars": "^5.1.0",
+    "moment": "^2.29.1",
     "mongoose": "^5.10.9",
-    "nodemon": "^2.0.6"
+    "node-fetch": "^2.6.1",
+    "nodemon": "^2.0.6",
+    "puppeteer": "^2.0.0"
   }
 }

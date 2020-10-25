@@ -1,17 +1,8 @@
-window.addEventListener("load",()=>{
-  console.log("ready")
-  SetPercentSkills()
-})
-
-const btn_pdf_download = document.getElementById("download_pdf")
-btn_pdf_download.addEventListener("click", (e)=>{DownloadPdf(e)})
-
-function DownloadPdf(e){  
+$("#downloadPDF").click(async function(e){
   e.preventDefault()
-  alert(`funcion pendiente`)
-}  
-
-function SetPercentSkills(){
-  const percent_skills = document.getElementById("skills")
-  //console.log(percent_skills)
-}
+  const userId = $(this).data('id')
+  await $.post(`/downloadPDF/${userId}`)
+  .done((data)=> {
+    window.open(`/public/pdfs/${data}`,'_blank')
+  })
+})

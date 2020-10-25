@@ -1,0 +1,7 @@
+{{#if skills}}
+{{#each skills}}
+   <div class="skills d-inline mb-2 ml-2">
+        <span class="text-left font-weight-bold">{{title}}</span> <span class="level-skill small-text font-weight-light font-italic text-{{averageLevel.levelColor}}">({{averageLevel.title}})</span>
+    </div>
+{{/each}}
+{{/if}}

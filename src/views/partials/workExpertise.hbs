@@ -1,0 +1,17 @@
+{{#if workExperience}}
+    {{#each workExperience}}
+        <li class="list-group-item">
+            <strong>{{title}}</strong>
+            <br>
+            <strong><em>Descripción</em></strong>
+            <blockquote>
+                <p>
+                    {{description}}
+                </p>
+                <footer class="font-italic text-small">
+                    {{dateMonthYear initialDate}} - {{dateMonthYear finalDate}}
+                </footer>
+            </blockquote>
+        </li>        
+    {{/each}}
+{{/if}}
